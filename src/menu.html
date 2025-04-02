@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Restaurante Japonés</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="icon/logo-kaizen-prime.png" alt="Kaizen Prime Logo">
+            <div class="header-text">
+                <h1>Kaizen Prime</h1>
+                <p>Donde la tradición evoluciona</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="portada">
+        <div class="portada-contenido">
+            <h2>Nuestra carta</h2>
+            <p>Sabores que evolucionan, tradición que perdura.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="filtro-container">
+            <h2 id="titulo-categoria">Toda la carta</h2>
+            <div class="botones-filtro">
+                <button class="filtro-btn activo" data-categoria="todo" onclick="filtrarMenu('todo')">Todo</button>
+                <button class="filtro-btn" data-categoria="sushi" onclick="filtrarMenu('sushi')">Sushi</button>
+                <button class="filtro-btn" data-categoria="ramen" onclick="filtrarMenu('ramen')">Ramen</button>
+                <button class="filtro-btn" data-categoria="postres" onclick="filtrarMenu('postres')">Postres</button>
+                <button class="filtro-btn" data-categoria="entrantes" onclick="filtrarMenu('entrantes')">Entrantes</button>
+                <button class="filtro-btn" data-categoria="donburi" onclick="filtrarMenu('donburi')">Donburi</button>
+                <button class="filtro-btn" data-categoria="udon" onclick="filtrarMenu('udon')">Udon & Soba</button>
+                <button class="filtro-btn" data-categoria="yakimono" onclick="filtrarMenu('yakimono')">Yakimono</button>
+                <button class="filtro-btn" data-categoria="bento" onclick="filtrarMenu('bento')">Bento</button>
+                <button class="filtro-btn" data-categoria="vinos" onclick="filtrarMenu('vinos')">Vinos &
+                    Cervezas</button>
+                <button class="filtro-btn" data-categoria="tes">Tés</button>
+            </div>
+        </div>
+        <div class="menu-items">
+            <div class="item sushi">
+                <a href="detalle-sushi-salmon.html">
+                    <img src="images/sushi-salmon.jpg" alt="Sushi de Salmón">
+                    <h3>Sushi de Salmón</h3>
+                    <p>Arroz, alga nori, salmón fresco. <strong>Precio: 12€</strong></p>
+                </a>
+            </div>
+            <div class="item sushi">
+                <a href="detalle-makis-variados.html">
+                    <img src="images/makis-variados.jpg" alt="Makis Variados">
+                    <h3>Makis Variados</h3>
+                    <p>Arroz, alga nori, aguacate, atún. <strong>Precio: 10€</strong></p>
+                </a>
+            </div>
+
+            <div class="item ramen"><img src="images/ramen-cerdo.jpg" alt="Ramen de Cerdo">
+                <h3>Ramen de Cerdo</h3>
+                <p>Fideos, caldo de cerdo, huevo, cebolleta. <strong>Precio: 14€</strong></p>
+            </div>
+            <div class="item ramen"><img src="images/ramen-pollo.jpg" alt="Ramen de Pollo">
+                <h3>Ramen de Pollo</h3>
+                <p>Fideos, caldo de pollo, huevo, brotes de bambú. <strong>Precio: 13€</strong></p>
+            </div>
+
+            <div class="item postres"><img src="images/mochi-te-verde.jpg" alt="Mochi de Té Verde">
+                <h3>Mochi de Té Verde</h3>
+                <p>Pasta de arroz, té verde, anko. <strong>Precio: 6€</strong></p>
+            </div>
+            <div class="item postres"><img src="images/cheesecake-japones.jpg" alt="Cheesecake Japonés">
+                <h3>Cheesecake Japonés</h3>
+                <p>Queso crema, huevos, azúcar. <strong>Precio: 7€</strong></p>
+            </div>
+
+            <div class="item entrantes"><img src="images/edamame.jpg" alt="Edamame">
+                <h3>Edamame</h3>
+                <p>Vainas de soja con sal. <strong>Precio: 5€</strong></p>
+            </div>
+            <div class="item entrantes"><img src="images/gyozas.jpg" alt="Gyozas">
+                <h3>Gyozas</h3>
+                <p>Masa fina, cerdo, col, ajo. <strong>Precio: 8€</strong></p>
+            </div>
+
+            <div class="item donburi"><img src="images/katsudon.jpg" alt="Katsudon">
+                <h3>Katsudon</h3>
+                <p>Arroz, cerdo empanado, huevo, cebolla. <strong>Precio: 12€</strong></p>
+            </div>
+            <div class="item donburi"><img src="images/gyudon.jpg" alt="Gyudon">
+                <h3>Gyudon</h3>
+                <p>Arroz, ternera, salsa dashi. <strong>Precio: 11€</strong></p>
+            </div>
+
+            <div class="item udon"><img src="images/kake-udon.jpg" alt="Kake Udon">
+                <h3>Kake Udon</h3>
+                <p>Fideos udon, caldo dashi, cebolleta. <strong>Precio: 9€</strong></p>
+            </div>
+            <div class="item udon"><img src="images/tempura-soba.jpg" alt="Tempura Soba">
+                <h3>Tempura Soba</h3>
+                <p>Fideos soba, tempura de gambas. <strong>Precio: 10€</strong></p>
+            </div>
+
+            <div class="item yakimono"><img src="images/yakitori.jpg" alt="Yakitori">
+                <h3>Yakitori</h3>
+                <p>Brochetas de pollo, salsa teriyaki. <strong>Precio: 7€</strong></p>
+            </div>
+            <div class="item yakimono"><img src="images/salmon-teriyaki.jpg" alt="Salmón Teriyaki">
+                <h3>Salmón Teriyaki</h3>
+                <p>Salmón a la parrilla, salsa teriyaki. <strong>Precio: 15€</strong></p>
+            </div>
+
+            <div class="item bento"><img src="images/bento-clasico.jpg" alt="Bento Clásico">
+                <h3>Bento Clásico</h3>
+                <p>Arroz, pescado, vegetales. <strong>Precio: 14€</strong></p>
+            </div>
+            <div class="item bento"><img src="images/bento-pollo.jpg" alt="Bento de Pollo">
+                <h3>Bento de Pollo</h3>
+                <p>Pollo karaage, arroz, ensalada. <strong>Precio: 13€</strong></p>
+            </div>
+
+            <div class="item vinos"><img src="images/sake-tradicional.jpg" alt="Sake Tradicional">
+                <h3>Sake Tradicional</h3>
+                <p>Arroz fermentado, sabor seco. <strong>Precio: 8€</strong></p>
+            </div>
+            <div class="item vinos"><img src="images/cerveza-asahi.jpg" alt="Cerveza Asahi">
+                <h3>Cerveza Asahi</h3>
+                <p>Malta, lúpulo, agua. <strong>Precio: 5€</strong></p>
+            </div>
+            <div class="item tes">
+                <img src="images/te-verde.jpg" alt="Té Verde Japonés">
+                <h3>Té Verde Japonés</h3>
+                <p>Infusión de hojas de té verde con un sabor suave y refrescante. <strong>Precio: 4€</strong></p>
+            </div>
+            <div class="item tes">
+                <img src="images/te-matcha.jpg" alt="Té Matcha">
+                <h3>Té Matcha</h3>
+                <p>Té verde en polvo de alta calidad, ideal para la ceremonia del té. <strong>Precio: 5€</strong></p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kaizen Prime | <a href="">Política de privacidad</a> | <a href="">Términos de servicio</a>
+        </p>
+
+        <div class="redes-sociales">
+            <a href="#" target="_blank"><img src="icon/instagram.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="icon/facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="icon/tik-tok.png" alt="TikTok"></a>
+            <a href="#" target="_blank"><img src="icon/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+
+        <p><a href="https://www.google.com/maps?q=Zocodover" target="_blank">Cómo llegar</a></p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
