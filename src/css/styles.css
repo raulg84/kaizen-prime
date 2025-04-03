@@ -55,6 +55,13 @@ nav ul {
   gap: 15px;
 }
 
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 /**nav ul li {
   display: inline;
 }*/
@@ -182,6 +189,13 @@ footer a:hover {
   /* Espaciado entre los botones */
 }
 
+/* En pantallas de más de 1200px ocuparán un ancho máximo del 60% */
+@media (min-width: 1200px) {
+  .filtro-container {
+    max-width: 78%;
+  }
+}
+
 .filtro-btn:hover {
   background-color: #ff00007f;
 }
@@ -246,13 +260,37 @@ footer a:hover {
 }
 
 /* Imagenes más pequeñas en pantallas de menos de 480px pixeles*/
-
 @media (max-width: 480px) {
   .menu-items img {
     max-width: 150px;
   }
 }
 
+/* En pantallas hasta 1024px 2 columnas de menús */
+@media (max-width: 1024px) {
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* En pantallas hasta 600px 1 columna de menús */
+@media (max-width: 600px) {
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+
+  .portada {
+    height: 40vh;
+  }
+
+  .portada h2 {
+    font-size: 28px;
+  }
+
+  .portada p {
+    font-size: 16px;
+  }
+}
 
 button {
   margin-top: 15px;
@@ -308,7 +346,7 @@ button:hover {
 @media (max-width: 768px) {
   
   .galeria {
-    flex-direction: column;
+    flex-direction: column; /**Ordenamos en columnas*/
     align-items: center;
   }
 
@@ -320,9 +358,9 @@ button:hover {
 
 
 
-/* PÁGINA RESERVA*/
+/* PÁGINA RESERVA */
 
-/**En pantallas grandes anchura máxima 750px*/
+/** En pantallas grandes anchura máxima 750px */
 #reservas {
   width: 70%;
   max-width: 750px;
@@ -335,6 +373,14 @@ button:hover {
 
 #reservas h2 {
   font-size: 30px;
+}
+
+/* En pantallas de máximo 600px la anchura máxima será del 90% */
+@media (max-width: 600px) {
+  #reservas {
+    width: 90%;
+    padding: 15px;
+  }
 }
 
 
@@ -395,6 +441,17 @@ input {
 .contacto input {
   width: 100%;
   box-sizing: border-box;
+}
+
+/* Pantallas pequeñas de menos de 600px */
+@media (max-width: 600px) {
+  .contacto {
+    flex-direction: column;
+  }
+
+  .contacto div {
+    width: 100%;
+  }
 }
 
 /* Página de contactos */
