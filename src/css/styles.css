@@ -169,41 +169,56 @@ footer a:hover {
 /* Botones de filtro */
 .filtro-container {
   display: flex;
+  flex-direction: column;   
   align-items: center;
-  /**justify-content: space-between; /* Separa el título y los botones */
   flex-wrap: wrap;
-  /* Ajuste para pantallas pequeñas */
-  /**max-width: 800px; /* Ancho máximo en pantallas grandes */
+  max-width: 1200px;
   margin: 0 auto 10px auto;
   padding: 10px;
+  box-sizing: border-box;
 }
 
-/* En pantallas de más de 1200px ocuparán un ancho máximo del 60% */
-@media (min-width: 1200px) {
-  .filtro-container {
-    max-width: 78%;
-  }
-}
-
-#titulo-categoria {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
 
 .botones-filtro {
   display: flex;
-  flex-wrap: wrap; /*Los botones saltan a la siguiente línea */
+  flex-wrap: wrap; /*Para que los botones puedan saltar a la siguiente línea */
   gap: 10px;
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 15px;
+
 }
 
- /* Para pantallas muy pequeñas cada botón ocupa el 100% del ancho */
+
+.filtro-btn {
+  padding: 10px 15px;
+  background-color: #ff4400f1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/* 🔧 En pantallas pequeñas */
+@media (max-width: 700px) {
+  .botones-filtro {
+    justify-content: center;
+  }
+
+  .filtro-btn {
+    flex: 1 1 45%;
+    min-width: 120px;
+  }
+}
+
+ /* En panatallas muy pequeñas ocupan todo el ancho */
 @media (max-width: 480px) {
-  .botones-filtro button {
-    flex: 1 1 100%;        
+  .filtro-btn {
+    flex: 1 1 100%;           
   }
 }
 
@@ -213,6 +228,12 @@ footer a:hover {
 
 .filtro-btn.activo {
   background-color: #ff0000fc;
+}
+
+#titulo-categoria {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
 }
 
 
