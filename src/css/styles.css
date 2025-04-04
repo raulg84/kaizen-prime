@@ -178,6 +178,13 @@ footer a:hover {
   padding: 10px;
 }
 
+/* En pantallas de más de 1200px ocuparán un ancho máximo del 60% */
+@media (min-width: 1200px) {
+  .filtro-container {
+    max-width: 78%;
+  }
+}
+
 #titulo-categoria {
   font-size: 24px;
   font-weight: bold;
@@ -186,14 +193,17 @@ footer a:hover {
 
 .botones-filtro {
   display: flex;
+  flex-wrap: wrap; /*Los botones saltan a la siguiente línea */
   gap: 10px;
-  /* Espaciado entre los botones */
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* En pantallas de más de 1200px ocuparán un ancho máximo del 60% */
-@media (min-width: 1200px) {
-  .filtro-container {
-    max-width: 78%;
+ /* Para pantallas muy pequeñas cada botón ocupa el 100% del ancho */
+@media (max-width: 480px) {
+  .botones-filtro button {
+    flex: 1 1 100%;        
   }
 }
 
