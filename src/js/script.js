@@ -1,11 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init({
-    duration: 1000,
-    once: true
-});
-
 //El árbol DOM está completamente cargado al capturar el evento DOMContentLoaded.
 //Se ejecuta justo recien cargado el DOM
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,6 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
     });
+});
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    duration: 1000,
+    once: true
 });
 
 
