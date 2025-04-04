@@ -1,3 +1,11 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    duration: 1000,
+    once: true
+});
+
 //El árbol DOM está completamente cargado al capturar el evento DOMContentLoaded.
 //Se ejecuta justo recien cargado el DOM
 document.addEventListener("DOMContentLoaded", function () {
@@ -19,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 tituloCategoria.textContent = "Toda la carta";
             } else {
                 // Botón seleccionado
-                tituloCategoria.textContent = this.textContent; 
+                tituloCategoria.textContent = this.textContent;
             }
 
             // Filtra los menús por categoría
@@ -30,7 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     item.style.display = 'none';
                 }
             });
-            
+
         });
     });
 });
+
+

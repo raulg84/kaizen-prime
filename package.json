@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "source": "src/index.html",
+  "browserslist": "> 0.1% in ES, last 5 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "parcel:dev": "parcel",
@@ -12,8 +13,12 @@
     "build": "npm-run-all clean parcel:build"
   },
   "devDependencies": {
+    "browserslist": "^4.24.4",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.14.4",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
