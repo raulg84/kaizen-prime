@@ -20,8 +20,15 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #111;
-  padding: 20px;
   color: white;
+}
+
+header,
+footer {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo-container {
@@ -62,9 +69,6 @@ nav ul {
   }
 }
 
-/**nav ul li {
-  display: inline;
-}*/
 
 nav ul li a {
   text-decoration: none;
@@ -129,8 +133,6 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px;
-  width: 100%;
 }
 
 footer a {
@@ -160,7 +162,6 @@ footer a:hover {
 .redes-sociales img:hover {
   transform: scale(1.2);
 }
-
 
 
 /** PANTALLA MENÚ */
