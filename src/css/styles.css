@@ -598,3 +598,17 @@ input {
 .enlaces ul li a:hover {
   text-decoration: underline;
 }
+
+/** Para pantallas pequeñas cambiamos el tamaño de la fuente */
+@media (max-width: 600px) {
+  .enlaces {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .enlaces h1 {
+    font-size: 2rem;
+  }
+  .enlaces h2 {
+    font-size: 1.5rem;
+  }
+}

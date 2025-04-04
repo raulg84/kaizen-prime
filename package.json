@@ -1,8 +1,9 @@
 {
-  "name": "parcel-vanilla-starter",
+  "name": "kaizen-prime",
   "private": true,
   "version": "1.0.0",
   "source": "src/index.html",
+  "homepage": "https://raulg84.github.io/kaizen-prime",
   "browserslist": "> 0.1% in ES, last 5 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +11,8 @@
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build"
+    "build": "npm-run-all clean parcel:build",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "browserslist": "^4.24.4",
