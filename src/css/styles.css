@@ -507,9 +507,11 @@ input {
 
 .iframe-container {
   position: relative;
-  padding-bottom: 55%; /**Sin la relación no se muestra el mapa*/
+  width: 100%;
+  max-width: 1200px;     
+  margin: 20px auto;
+  padding-bottom: 55%;
   height: 0;
-  max-width: 100%;
   overflow: hidden;
 }
 
