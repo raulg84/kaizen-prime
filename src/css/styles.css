@@ -415,7 +415,6 @@ button:hover {
   #detalle {
     padding: 15px;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 }
 
@@ -533,7 +532,6 @@ input {
   #contacto {
     padding: 15px;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
 }
 
