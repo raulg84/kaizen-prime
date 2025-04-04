@@ -489,7 +489,8 @@ input {
 /* Página de contactos */
 
 #contacto {
-  max-width: 800px;
+  max-width: 1200px;
+  width: 100%;
   margin: 30px auto;
   padding: 20px;
   background-color: #fff;
