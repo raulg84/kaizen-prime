@@ -11,66 +11,67 @@
 <body>
     <header>
         <div class="logo-container" data-aos="zoom-in">
-          <img src="icon/logo-kaizen-prime.png" alt="Kaizen Prime Logo">
-          <div class="header-text">
-            <h1>Kaizen Prime</h1>
-            <p>Donde la tradición evoluciona</p>
-          </div>
+            <img src="icon/logo-kaizen-prime.png" alt="Kaizen Prime Logo">
+            <div class="header-text">
+                <h1>Kaizen Prime</h1>
+                <p>Donde la tradición evoluciona</p>
+            </div>
         </div>
         <nav>
-          <ul>
-            <li data-aos="fade-down" data-aos-delay="100"><a href="index.html">Inicio</a></li>
-            <li data-aos="fade-down" data-aos-delay="200"><a href="menu.html">Menú</a></li>
-            <li data-aos="fade-down" data-aos-delay="300"><a href="reservas.html">Reservas</a></li>
-            <li data-aos="fade-down" data-aos-delay="400"><a href="contacto.html">Contacto</a></li>
-            <li data-aos="fade-down" data-aos-delay="500"><a href="enlaces.html">Enlaces</a></li>
-          </ul>
+            <ul>
+                <li data-aos="fade-down" data-aos-delay="100"><a href="index.html">Inicio</a></li>
+                <li data-aos="fade-down" data-aos-delay="200"><a href="menu.html">Menú</a></li>
+                <li data-aos="fade-down" data-aos-delay="300"><a href="reservas.html">Reservas</a></li>
+                <li data-aos="fade-down" data-aos-delay="400"><a href="contacto.html">Contacto</a></li>
+                <li data-aos="fade-down" data-aos-delay="500"><a href="enlaces.html">Enlaces</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
+    <main class="contenido">
 
-    <div id="reservas">
-        <h2>Reservar una mesa</h2>
+        <div id="reservas">
+            <h2>Reservar una mesa</h2>
 
-        <form action="" method="post">
+            <form action="" method="post">
 
-            <div class="fecha-hora">
-                <div>
-                    <label for="fecha">Fecha:</label>
-                    <input type="date" id="fecha" name="fecha" required>
+                <div class="fecha-hora">
+                    <div>
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+                    <div class="personas">
+                        <label for="personas">Número de personas:</label>
+                        <input type="number" id="personas" name="personas" min="1" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="hora">Hora:</label>
-                    <input type="time" id="hora" name="hora" required>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <div class="contacto">
+                    <div>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
                 </div>
-                <div class="personas">
-                    <label for="personas">Número de personas:</label>
-                    <input type="number" id="personas" name="personas" min="1" required>
-                </div>
-            </div>
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="observaciones" rows="4"
+                    placeholder="Añade cualquier petición especial..."></textarea>
 
-            <div class="contacto">
-                <div>
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-                </div>
-            </div>
-
-            <label for="observaciones">Observaciones:</label>
-            <textarea id="observaciones" name="observaciones" rows="4"
-                placeholder="Añade cualquier petición especial..."></textarea>
-
-            <button type="submit">Reservar</button>
-        </form>
-        <button class="btn-volver" onclick="window.history.back();">Volver Atrás</button>
-    </div>
-
+                <button type="submit">Reservar</button>
+            </form>
+            <button class="btn-volver" onclick="window.history.back();">Volver Atrás</button>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2025 Kaizen Prime | <a href="">Política de privacidad</a> | <a href="">Términos de servicio</a>
         </p>

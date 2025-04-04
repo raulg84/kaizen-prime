@@ -1,10 +1,13 @@
 /* ESTILOS GENERALES */
 html,
 body {
-  height: 100%;
-  margin: 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.contenido {
+  flex: 1;
 }
 
 body {
@@ -546,7 +549,8 @@ input {
   width: 100%;
   max-width: 1200px;
   margin: 20px auto;
-  padding-bottom: 56.25%;   /* Relación 16:9 */
+  padding-bottom: 56.25%;
+  /* Relación 16:9 */
   height: 0;
   overflow: hidden;
 }
