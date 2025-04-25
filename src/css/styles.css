@@ -628,3 +628,14 @@ input {
     opacity: 0.8;
   }
 }
+
+.imagen-clip img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  clip-path: polygon(0% 100%, 20% 30%, 40% 10%, 60% 10%, 80% 30%, 100% 100%);
+  shape-outside: polygon(0% 100%, 20% 30%, 40% 10%, 60% 10%, 80% 30%, 100% 100%);
+  border-radius: 15px;
+  float: right;
+}
+
