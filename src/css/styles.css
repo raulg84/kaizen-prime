@@ -639,3 +639,10 @@ input {
   float: right;
 }
 
+@media (max-width: 600px) {
+  .imagen-decorativa-clip img {
+    float: none;
+    display: block;
+  }
+}
+
