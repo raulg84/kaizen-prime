@@ -44,7 +44,10 @@ fs.readdirSync(inputDir).forEach(file => {
         .resize({ width: size })
         .webp({ quality: 75 })
         .toFile(path.join(outputDirImages, `${baseName}-${size}.webp`))
-        .then(() => console.log(`Creado: ${baseName}-${size}.jpg`))
+        .then(() => {
+          const sizeInBytes = getFileSize(path.join(outputDirImages, `${baseName}-${size}.webp`));
+          console.log(`Creado: ${baseName}-${size}.webp - ${(sizeInBytes / 1024).toFixed(2)} KB`);
+        })
         .catch(err => console.error(`ERROR WebP ${file}:`, err));
 
       // JPEG
@@ -53,10 +56,13 @@ fs.readdirSync(inputDir).forEach(file => {
         .resize({ width: size })
         .jpeg({ quality: 80 })
         .toFile(path.join(outputDirImages, `${baseName}-${size}.jpg`))
-        .then(() => console.log(`Creado: ${baseName}-${size}.jpg`))
+        .then(() => {
+          const sizeInBytes = getFileSize(path.join(outputDirImages, `${baseName}-${size}.jpg`));
+          console.log(`Creado: ${baseName}-${size}.jpg - ${(sizeInBytes / 1024).toFixed(2)} KB`);
+        })
         .catch(err => console.error(`ERROR JPEG ${file}:`, err));
 
-        //Resto de imágenes 8reducimos tamaño)
+      //Resto de imágenes 8reducimos tamaño)
     } else {
 
       // WebP
@@ -64,7 +70,10 @@ fs.readdirSync(inputDir).forEach(file => {
         .resize({ width: size })
         .webp({ quality: 75 })
         .toFile(path.join(outputDirImages, `${baseName}-${size}.webp`))
-        .then(() => console.log(`Creado: ${baseName}-${size}.jpg`))
+        .then(() => {
+          const sizeInBytes = getFileSize(path.join(outputDirImages, `${baseName}-${size}.webp`));
+          console.log(`Creado: ${baseName}-${size}.webp - ${(sizeInBytes / 1024).toFixed(2)} KB`);
+        })
         .catch(err => console.error(`ERROR WebP ${file}:`, err));
 
       // JPEG
@@ -72,14 +81,13 @@ fs.readdirSync(inputDir).forEach(file => {
         .resize({ width: size })
         .jpeg({ quality: 80 })
         .toFile(path.join(outputDirImages, `${baseName}-${size}.jpg`))
-        .then(() => console.log(`Creado: ${baseName}-${size}.jpg`))
+        .then(() => {
+          const sizeInBytes = getFileSize(path.join(outputDirImages, `${baseName}-${size}.jpg`));
+          console.log(`Creado: ${baseName}-${size}.jpg - ${(sizeInBytes / 1024).toFixed(2)} KB`);
+        })
         .catch(err => console.error(`ERROR JPEG ${file}:`, err));
 
     }
-
-
-
-
   });
 });
 
@@ -97,15 +105,31 @@ fs.readdirSync(staticDir).forEach(file => {
   sharp(inputFile)
     .webp({ quality: 80 })
     .toFile(path.join(outputDirIcon, `${baseName}.webp`))
-    .then(() => console.log(`Icono WebP optimizado: ${baseName}.webp`))
+    .then(() => {
+      const sizeInBytes = getFileSize(path.join(outputDirIcon, `${baseName}.webp`));
+      console.log(`Icono WebP optimizado: ${baseName}.webp - ${(sizeInBytes / 1024).toFixed(2)} KB`)
+    })
     .catch(err => console.error(`ERROR Icono WebP ${file}:`, err));
 
   // JPEG
   sharp(inputFile)
     .jpeg({ quality: 85 })
     .toFile(path.join(outputDirIcon, `${baseName}.jpg`))
-    .then(() => console.log(`Icono JPEG optimizado: ${baseName}.jpg`))
+    .then(() => {
+      const sizeInBytes = getFileSize(path.join(outputDirIcon, `${baseName}.jpg`));
+      console.log(`Icono JPEG optimizado: ${baseName}.jpg - ${(sizeInBytes / 1024).toFixed(2)} KB`)
+    })
     .catch(err => console.error(`ERROR Icono JPEG ${file}:`, err));
 });
 
 console.log('Procesando las imágenes...');
+
+// Función para obtener el tamaño de un archivo en bytes
+function getFileSize(filePath) {
+  try {
+    const stats = fs.statSync(filePath);
+    return stats.size; // Tamaño en bytes
+  } catch (err) {
+    console.error(`Error al obtener el tamaño del archivo: ${filePath}`, err);
+  }
+}
