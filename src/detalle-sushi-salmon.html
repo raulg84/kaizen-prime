@@ -11,7 +11,10 @@
 <body>
   <header role="banner">
     <div class="logo-container" data-aos="zoom-in">
-      <img src="icon/logo-kaizen-prime.png" alt="Kaizen Prime Logo">
+      <picture>
+        <source srcset="icon/optimized/logo-kaizen-prime.webp" type="image/webp">
+        <img src="icon/optimized/logo-kaizen-prime.jpg" alt="Logotipo de Kaizen Prime">
+      </picture>
       <div class="header-text">
         <h1>Kaizen Prime</h1>
         <p>Donde la tradición evoluciona</p>
@@ -31,7 +34,20 @@
 
     <section id="detalle">
       <h2>Sushi de Salmón</h2>
-      <img src="images/sushi-salmon.jpg" alt="Sushi de Salmón Destacado" class="imagen-destacada">
+      <picture>
+        <!-- WebP para navegadores modernos -->
+        <source srcset="images/optimized/sushi-salmon-480.webp" type="image/webp" media="(max-width: 600px)">
+        <source srcset="images/optimized/sushi-salmon-768.webp" type="image/webp" media="(max-width: 1024px)">
+        <source srcset="images/optimized/sushi-salmon-1200.webp" type="image/webp">
+
+        <!-- JPEG para navegadores antiguos -->
+        <source srcset="images/optimized/sushi-salmon-480.jpg" media="(max-width: 600px)">
+        <source srcset="images/optimized/sushi-salmon-768.jpg" media="(max-width: 1024px)">
+        <source srcset="images/optimized/sushi-salmon-1200.jpg">
+
+        <!-- Imagen por defecto cuando fallan las anteriores-->
+        <img src="images/optimized/sushi-salmon-1200.jpg" alt="Sushi de Salmón" loading="lazy" class="imagen-destacada">
+      </picture>
 
       <h3>Ingredientes</h3>
       <ul>
@@ -56,9 +72,50 @@
 
       <h3>Galería</h3>
       <div class="galeria">
-        <img src="images/sushi-salmon-preparacion.jpg" alt="Sushi de Salmón - Preparación">
-        <img src="images/sushi-salmon-presentacion.jpg" alt="Sushi de Salmón - Presentación">
-        <img src="images/sushi-salmon-acompaniamientos.jpg" alt="Sushi de Salmón - Acompañamientos">
+        <picture>
+          <!-- WebP para navegadores modernos -->
+          <source srcset="images/optimized/sushi-salmon-preparacion-480.webp" type="image/webp" media="(max-width: 600px)">
+          <source srcset="images/optimized/sushi-salmon-preparacion-768.webp" type="image/webp" media="(max-width: 1024px)">
+          <source srcset="images/optimized/sushi-salmon-preparacion-1200.webp" type="image/webp">
+  
+          <!-- JPEG para navegadores antiguos -->
+          <source srcset="images/optimized/sushi-salmon-preparacion-480.jpg" media="(max-width: 600px)">
+          <source srcset="images/optimized/sushi-salmon-preparacion-768.jpg" media="(max-width: 1024px)">
+          <source srcset="images/optimized/sushi-salmon-preparacion-1200.jpg">
+  
+          <!-- Imagen por defecto cuando fallan las anteriores-->
+          <img src="images/optimized/sushi-salmon-preparacion-1200.jpg" alt="Sushi de Salmón - Preparación" loading="lazy" >
+        </picture>
+
+        <picture>
+          <!-- WebP para navegadores modernos -->
+          <source srcset="images/optimized/sushi-salmon-presentacion-480.webp" type="image/webp" media="(max-width: 600px)">
+          <source srcset="images/optimized/sushi-salmon-presentacion-768.webp" type="image/webp" media="(max-width: 1024px)">
+          <source srcset="images/optimized/sushi-salmon-presentacion-1200.webp" type="image/webp">
+  
+          <!-- JPEG para navegadores antiguos -->
+          <source srcset="images/optimized/sushi-salmon-presentacion-480.jpg" media="(max-width: 600px)">
+          <source srcset="images/optimized/sushi-salmon-presentacion-768.jpg" media="(max-width: 1024px)">
+          <source srcset="images/optimized/sushi-salmon-presentacion-1200.jpg">
+  
+          <!-- Imagen por defecto cuando fallan las anteriores-->
+          <img src="images/optimized/sushi-salmon-presentacion-1200.jpg" alt="Sushi de Salmón - Presentación" loading="lazy" >
+        </picture>
+
+        <picture>
+          <!-- WebP para navegadores modernos -->
+          <source srcset="images/optimized/sushi-salmon-acompaniamientos-480.webp" type="image/webp" media="(max-width: 600px)">
+          <source srcset="images/optimized/sushi-salmon-acompaniamientos-768.webp" type="image/webp" media="(max-width: 1024px)">
+          <source srcset="images/optimized/sushi-salmon-acompaniamientos-1200.webp" type="image/webp">
+  
+          <!-- JPEG para navegadores antiguos -->
+          <source srcset="images/optimized/sushi-salmon-acompaniamientos-480.jpg" media="(max-width: 600px)">
+          <source srcset="images/optimized/sushi-salmon-acompaniamientos-768.jpg" media="(max-width: 1024px)">
+          <source srcset="images/optimized/sushi-salmon-acompaniamientos-1200.jpg">
+  
+          <!-- Imagen por defecto cuando fallan las anteriores-->
+          <img src="images/optimized/sushi-salmon-acompaniamientos-1200.jpg" alt="Sushi de Salmón - Acompañamientos" loading="lazy" >
+        </picture>
 
       </div>
 

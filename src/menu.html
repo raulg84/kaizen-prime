@@ -11,22 +11,25 @@
 <body>
     <header role="banner">
         <div class="logo-container" data-aos="zoom-in">
-          <img src="icon/logo-kaizen-prime.png" alt="Kaizen Prime Logo">
-          <div class="header-text">
-            <h1>Kaizen Prime</h1>
-            <p>Donde la tradición evoluciona</p>
-          </div>
+            <picture>
+                <source srcset="icon/optimized/logo-kaizen-prime.webp" type="image/webp">
+                <img src="icon/optimized/logo-kaizen-prime.jpg" alt="Logotipo de Kaizen Prime">
+            </picture>
+            <div class="header-text">
+                <h1>Kaizen Prime</h1>
+                <p>Donde la tradición evoluciona</p>
+            </div>
         </div>
         <nav role="navigation" aria-label="Navegación principal">
-          <ul>
-            <li data-aos="fade-down" data-aos-delay="100"><a href="index.html">Inicio</a></li>
-            <li data-aos="fade-down" data-aos-delay="200"><a href="menu.html">Menú</a></li>
-            <li data-aos="fade-down" data-aos-delay="300"><a href="reservas.html">Reservas</a></li>
-            <li data-aos="fade-down" data-aos-delay="400"><a href="contacto.html">Contacto</a></li>
-            <li data-aos="fade-down" data-aos-delay="500"><a href="enlaces.html">Enlaces</a></li>
-          </ul>
+            <ul>
+                <li data-aos="fade-down" data-aos-delay="100"><a href="index.html">Inicio</a></li>
+                <li data-aos="fade-down" data-aos-delay="200"><a href="menu.html">Menú</a></li>
+                <li data-aos="fade-down" data-aos-delay="300"><a href="reservas.html">Reservas</a></li>
+                <li data-aos="fade-down" data-aos-delay="400"><a href="contacto.html">Contacto</a></li>
+                <li data-aos="fade-down" data-aos-delay="500"><a href="enlaces.html">Enlaces</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
     <main class="contenido">
 
@@ -62,97 +65,293 @@
             <div class="menu-items">
                 <div class="item sushi">
                     <a href="detalle-sushi-salmon.html">
-                        <img src="images/sushi-salmon.jpg" alt="Sushi de Salmón">
+                        <picture>
+                            <!-- WebP para navegadores modernos -->
+                            <source srcset="images/optimized/sushi-salmon-480.webp" type="image/webp" >
+                
+                            <!-- JPEG para navegadores antiguos -->
+                            <source srcset="images/optimized/sushi-salmon-480.jpg" >
+                
+                            <!-- Imagen por defecto cuando fallan las anteriores-->
+                            <img src="images/optimized/sushi-salmon-480.jpg" alt="Sushi de Salmón" loading="lazy">
+                        </picture>
                         <h3>Sushi de Salmón</h3>
                         <p>Arroz, alga nori, salmón fresco. <strong>Precio: 12€</strong></p>
                     </a>
                 </div>
                 <div class="item sushi">
                     <a href="detalle-makis-variados.html">
-                        <img src="images/makis-variados.jpg" alt="Makis Variados">
+                        <picture>
+                            <!-- WebP para navegadores modernos -->
+                            <source srcset="images/optimized/makis-variados-480.webp" type="image/webp">
+                
+                            <!-- JPEG para navegadores antiguos -->
+                            <source srcset="images/optimized/makis-variados-480.jpg">
+                
+                            <!-- Imagen por defecto cuando fallan las anteriores-->
+                            <img src="images/optimized/makis-variados-480.jpg" alt="Makis Variados" loading="lazy">
+                        </picture>
                         <h3>Makis Variados</h3>
                         <p>Arroz, alga nori, aguacate, atún. <strong>Precio: 10€</strong></p>
                     </a>
                 </div>
 
-                <div class="item ramen"><img src="images/ramen-cerdo.jpg" alt="Ramen de Cerdo">
+                <div class="item ramen">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/ramen-cerdo-480.webp" type="image/webp" >
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/ramen-cerdo-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/ramen-cerdo-480.jpg" alt="Ramen de Cerdo" loading="lazy">
+                    </picture>
                     <h3>Ramen de Cerdo</h3>
                     <p>Fideos, caldo de cerdo, huevo, cebolleta. <strong>Precio: 14€</strong></p>
                 </div>
-                <div class="item ramen"><img src="images/ramen-pollo.jpg" alt="Ramen de Pollo">
+                <div class="item ramen">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/ramen-pollo-480.webp" type="image/webp" >
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/ramen-pollo-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/ramen-pollo-480.jpg" alt="Ramen de Pollo" loading="lazy">
+                    </picture>
                     <h3>Ramen de Pollo</h3>
                     <p>Fideos, caldo de pollo, huevo, brotes de bambú. <strong>Precio: 13€</strong></p>
                 </div>
 
-                <div class="item postres"><img src="images/mochi-te-verde.jpg" alt="Mochi de Té Verde">
+                <div class="item postres">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/mochi-te-verde-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/mochi-te-verde-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/mochi-te-verde-480.jpg"  alt="Mochi de Té Verde" loading="lazy">
+                    </picture>
                     <h3>Mochi de Té Verde</h3>
                     <p>Pasta de arroz, té verde, anko. <strong>Precio: 6€</strong></p>
                 </div>
-                <div class="item postres"><img src="images/cheesecake-japones.jpg" alt="Cheesecake Japonés">
+                <div class="item postres">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/cheesecake-japones-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/cheesecake-japones-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/cheesecake-japones-480.jpg"  aalt="Cheesecake Japonés" loading="lazy">
+                    </picture>
                     <h3>Cheesecake Japonés</h3>
                     <p>Queso crema, huevos, azúcar. <strong>Precio: 7€</strong></p>
                 </div>
 
-                <div class="item entrantes"><img src="images/edamame.jpg" alt="Edamame">
+                <div class="item entrantes">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/edamame-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/edamame-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/edamame-480.jpg"  alt="Edamame" loading="lazy">
+                    </picture>
                     <h3>Edamame</h3>
                     <p>Vainas de soja con sal. <strong>Precio: 5€</strong></p>
                 </div>
-                <div class="item entrantes"><img src="images/gyozas.jpg" alt="Gyozas">
+                <div class="item entrantes">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/gyozas-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/gyozas-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/gyozas-480.jpg"  alt="Gyozas" loading="lazy">
+                    </picture>
                     <h3>Gyozas</h3>
                     <p>Masa fina, cerdo, col, ajo. <strong>Precio: 8€</strong></p>
                 </div>
 
-                <div class="item donburi"><img src="images/katsudon.jpg" alt="Katsudon">
+                <div class="item donburi">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/katsudon-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/katsudon-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/katsudon-480.jpg"  alt="Katsudon" loading="lazy">
+                    </picture>
                     <h3>Katsudon</h3>
                     <p>Arroz, cerdo empanado, huevo, cebolla. <strong>Precio: 12€</strong></p>
                 </div>
-                <div class="item donburi"><img src="images/gyudon.jpg" alt="Gyudon">
+                <div class="item donburi">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/gyudon-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/gyudon-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/gyudon-480.jpg"  alt="Gyudon" loading="lazy">
+                    </picture>
                     <h3>Gyudon</h3>
                     <p>Arroz, ternera, salsa dashi. <strong>Precio: 11€</strong></p>
                 </div>
 
-                <div class="item udon"><img src="images/kake-udon.jpg" alt="Kake Udon">
+                <div class="item udon">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/kate-udom-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/kate-udom-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/kate-udom-480.jpg"  alt="Kake Udonm" loading="lazy">
+                    </picture>
                     <h3>Kake Udon</h3>
                     <p>Fideos udon, caldo dashi, cebolleta. <strong>Precio: 9€</strong></p>
                 </div>
-                <div class="item udon"><img src="images/tempura-soba.jpg" alt="Tempura Soba">
+                <div class="item udon">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/tempura-soba-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/tempura-soba-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/tempura-soba-480.jpg"  alt="Tempura Soba" loading="lazy">
+                    </picture>
                     <h3>Tempura Soba</h3>
                     <p>Fideos soba, tempura de gambas. <strong>Precio: 10€</strong></p>
                 </div>
 
-                <div class="item yakimono"><img src="images/yakitori.jpg" alt="Yakitori">
+                <div class="item yakimono">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/yakitori-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/yakitori-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/yakitori-480.jpg"  alt="Yakitori" loading="lazy">
+                    </picture>
                     <h3>Yakitori</h3>
                     <p>Brochetas de pollo, salsa teriyaki. <strong>Precio: 7€</strong></p>
                 </div>
-                <div class="item yakimono"><img src="images/salmon-teriyaki.jpg" alt="Salmón Teriyaki">
+                <div class="item yakimono">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/salmon-teriyaki-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/salmon-teriyaki-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/salmon-teriyaki-480.jpg"  alt="Salmón Teriyaki" loading="lazy">
+                    </picture>
                     <h3>Salmón Teriyaki</h3>
                     <p>Salmón a la parrilla, salsa teriyaki. <strong>Precio: 15€</strong></p>
                 </div>
 
-                <div class="item bento"><img src="images/bento-clasico.jpg" alt="Bento Clásico">
+                <div class="item bento">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/bento-clasico-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/bento-clasico-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/bento-clasico-480.jpg"  alt="Bento Clásico" loading="lazy">
+                    </picture>
                     <h3>Bento Clásico</h3>
                     <p>Arroz, pescado, vegetales. <strong>Precio: 14€</strong></p>
                 </div>
-                <div class="item bento"><img src="images/bento-pollo.jpg" alt="Bento de Pollo">
+                <div class="item bento">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/bento-pollo-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/bento-pollo-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/bento-pollo-480.jpg"  alt="Bento de Pollo" loading="lazy">
+                    </picture>
                     <h3>Bento de Pollo</h3>
                     <p>Pollo karaage, arroz, ensalada. <strong>Precio: 13€</strong></p>
                 </div>
 
-                <div class="item vinos"><img src="images/sake-tradicional.jpg" alt="Sake Tradicional">
+                <div class="item vinos">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/sake-tradicional-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/sake-tradicional-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/sake-tradicional-480.jpg"  alt="Sake Tradicional" loading="lazy">
+                    </picture>
                     <h3>Sake Tradicional</h3>
                     <p>Arroz fermentado, sabor seco. <strong>Precio: 8€</strong></p>
                 </div>
-                <div class="item vinos"><img src="images/cerveza-asahi.jpg" alt="Cerveza Asahi">
+                <div class="item vinos">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/cerveza-asahi-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/cerveza-asahi-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/cerveza-asahi-480.jpg"  alt="Cerveza Asahi" loading="lazy">
+                    </picture>
                     <h3>Cerveza Asahi</h3>
                     <p>Malta, lúpulo, agua. <strong>Precio: 5€</strong></p>
                 </div>
                 <div class="item tes">
-                    <img src="images/te-verde.jpg" alt="Té Verde Japonés">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/te-verde-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/te-verde-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/te-verde-480.jpg"  alt="Té Verde Japonés" loading="lazy">
+                    </picture>
                     <h3>Té Verde Japonés</h3>
                     <p>Infusión de hojas de té verde con un sabor suave y refrescante. <strong>Precio: 4€</strong></p>
                 </div>
                 <div class="item tes">
-                    <img src="images/te-matcha.jpg" alt="Té Matcha">
+                    <picture>
+                        <!-- WebP para navegadores modernos -->
+                        <source srcset="images/optimized/te-matcha-480.webp" type="image/webp">
+            
+                        <!-- JPEG para navegadores antiguos -->
+                        <source srcset="images/optimized/te-matcha-480.jpg" >
+            
+                        <!-- Imagen por defecto cuando fallan las anteriores-->
+                        <img src="images/optimized/te-matcha-480.jpg"  alt="Té Matcha" loading="lazy">
+                    </picture>
                     <h3>Té Matcha</h3>
                     <p>Té verde en polvo de alta calidad, ideal para la ceremonia del té. <strong>Precio: 5€</strong>
                     </p>
@@ -163,31 +362,31 @@
     </main>
     <footer role="contentinfo">
         <p>&copy; 2025 Kaizen Prime |
-          <a href="#" aria-label="Política de privacidad">Política de privacidad</a> |
-          <a href="#" aria-label="Términos de servicio">Términos de servicio</a>
+            <a href="#" aria-label="Política de privacidad">Política de privacidad</a> |
+            <a href="#" aria-label="Términos de servicio">Términos de servicio</a>
         </p>
-    
+
         <div class="redes-sociales" aria-label="Redes sociales">
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <img src="icon/instagram.png" alt="Instagram" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <img src="icon/facebook.png" alt="Facebook" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <img src="icon/tik-tok.png" alt="TikTok" />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <img src="icon/whatsapp.png" alt="WhatsApp" />
-          </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="icon/instagram.png" alt="Instagram" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="icon/facebook.png" alt="Facebook" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <img src="icon/tik-tok.png" alt="TikTok" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <img src="icon/whatsapp.png" alt="WhatsApp" />
+            </a>
         </div>
-    
+
         <p>
-          <a href="https://www.google.com/maps?q=Zocodover" target="_blank" rel="noopener noreferrer">
-            Cómo llegar
-          </a>
+            <a href="https://www.google.com/maps?q=Zocodover" target="_blank" rel="noopener noreferrer">
+                Cómo llegar
+            </a>
         </p>
-      </footer>
+    </footer>
     <script type="module" src="./js/script.js"></script>
 
 </body>
