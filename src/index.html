@@ -35,7 +35,20 @@
     <section id="inicio" class="portada" aria-labelledby="titulo-bienvenida">
       <div class="portada-contenido" data-aos="fade-up">
         <div class="imagen-clip">
-          <img src="images/clip-path-fondo.jpg" alt="" aria-hidden="true">
+          <picture>
+            <!-- WebP para navegadores modernos -->
+            <source srcset="images/optimized/clip-path-fondo-480.webp" type="image/webp" media="(max-width: 600px)">
+            <source srcset="images/optimized/clip-path-fondo-768.webp" type="image/webp" media="(max-width: 1024px)">
+            <source srcset="images/optimized/clip-path-fondo-1200.webp" type="image/webp">
+    
+            <!-- JPEG para navegadores antiguos -->
+            <source srcset="images/optimized/clip-path-fondo-480.jpg" media="(max-width: 600px)">
+            <source srcset="images/optimized/clip-path-fondo-768.jpg" media="(max-width: 1024px)">
+            <source srcset="images/optimized/clip-path-fondo-1200.jpg">
+    
+            <!-- Imagen por defecto cuando fallan las anteriores-->
+            <img src="images/optimized/clip-path-fondo-1200.jpg" alt="Bonsai" loading="lazy" aria-hidden="true">
+          </picture>
         </div>
         <svg class="sol" viewBox="0 0 100 100" width="150" height="150" xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true">
