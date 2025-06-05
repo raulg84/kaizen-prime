@@ -59,7 +59,7 @@
                     <button class="filtro-btn" data-categoria="bento" onclick="filtrarMenu('bento')">Bento</button>
                     <button class="filtro-btn" data-categoria="vinos" onclick="filtrarMenu('vinos')">Vinos &
                         Cervezas</button>
-                    <button class="filtro-btn" data-categoria="tes">Tés</button>
+                    <button class="filtro-btn" data-categoria="tes" onclick="filtrarMenu('tes')">Tés</button>
                 </div>
             </div>
             <div class="menu-items">
@@ -148,7 +148,7 @@
                         <source srcset="images/optimized/cheesecake-japones-480.jpg" >
             
                         <!-- Imagen por defecto cuando fallan las anteriores-->
-                        <img src="images/optimized/cheesecake-japones-480.jpg"  aalt="Cheesecake Japonés" loading="lazy">
+                        <img src="images/optimized/cheesecake-japones-480.jpg"  alt="Cheesecake Japonés" loading="lazy">
                     </picture>
                     <h3>Cheesecake Japonés</h3>
                     <p>Queso crema, huevos, azúcar. <strong>Precio: 7€</strong></p>
@@ -423,7 +423,7 @@
             </a>
         </p>
     </footer>
-    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/script.js" defer></script>
 
 </body>
 
